@@ -31,7 +31,7 @@ jobs:
 
       - name: Download Google Doc
         run: |
-          curl -L "https://docs.google.com/document/d/19Z-F2WiKFrBjV9tquQqSN_utwX2Rrgt57--4UwpNle4/export?format=docx" -o doc.docx
+          curl -L "https://docs.google.com/document/d/LOREM/export?format=docx" -o doc.docx
           
       # html = formats it using html
       # gfm = github-flavored markdown 

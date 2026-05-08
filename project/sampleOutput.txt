@@ -1,0 +1,66 @@
+=== Initial Account Information ===
+Account type: CheckingAccount
+Account owner: Aspen
+Amount in account: $1000.0
+
+Account type: SavingAccount
+Account owner: Hobs
+Amount in account: $2000.0
+Interest amount: $120.0
+
+Account type: CreditAccount
+Account owner: Christian
+Amount in account: $0.0
+Interest amount: $0.0
+
+=== Performing Transactions ===
+Before Tansactions:
+        Aspen before: $1000.0
+        Hobs before: $2000.0
+
+Aspen deposit $250:
+        Aspen: $1250.0
+
+Hobs withdraw $300:
+        Hobs: $1700.0
+
+Aspen transfering $200 to Hobs
+        Aspen after: $1050.0
+        Hobs after: $1900.0
+
+Before Tansactions:
+        Christian before: $0.0
+
+Christian withdraw $500
+        Christian: $500.0
+
+Christian deposit $200
+        Christian: $300.0
+
+=== Updated Account Information ===
+Account type: CheckingAccount
+Account owner: Aspen
+Amount in account: $1050.0
+
+Account type: SavingAccount
+Account owner: Hobs
+Amount in account: $1900.0
+Interest amount: $114.0
+
+Account type: CreditAccount
+Account owner: Christian
+Amount in account: $300.0
+Interest amount: $15.0
+
+=== Demonstrating Exceptions ===
+Account Owners: Aspen Hobs Christian 
+Deposit $100 to Avin
+Caught ErrorAccountNotFound: Account for owner "Avin" not found.
+
+Aspen: $1050.0
+Withdraw $5000 from Aspen
+Caught ErrorLowFunds: Not enough funds in checking account.
+
+Hobs: $1900.0
+Deposit -$100 to Hobs
+Caught ErrorInvalidTransactionAmount: Transaction amount must be greater than 0.0
